@@ -1,0 +1,1162 @@
+[
+    {
+        "id": 6000,
+        "medicine_name": "Gastronil",
+        "category_name": "Injection",
+        "generic_name": "Esomeprazole Dihydrate",
+        "strength": "50 mg",
+        "manufacturer_name": "GlobalMeds",
+        "slug": "lungitra-20-mg-syrup",
+        "discount_type": "Percentage",
+        "discount_value": 6,
+        "is_discountable": false,
+        "is_available": false,
+        "medicine_image": "https://m.media-amazon.com/images/I/418AyAbmJoL.jpg",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 10000,
+                "unit": "pack",
+                "unit_size": 50,
+                "price": 420
+            },
+            {
+                "id": 10001,
+                "unit": "100's pack",
+                "unit_size": 1,
+                "price": 288
+            }
+        ]
+    },
+    {
+        "id": 6001,
+        "medicine_name": "Proventis",
+        "category_name": "Injection",
+        "generic_name": "Esomeprazole Monohydrate",
+        "strength": "10 mg",
+        "manufacturer_name": "Healwell Pharma",
+        "slug": "healix-10-mg-capsule",
+        "discount_type": "Flat",
+        "discount_value": 16,
+        "is_discountable": false,
+        "is_available": true,
+        "medicine_image": "/media/medicines/default-medicine.png",
+        "popularity_category": "New",
+        "unit_prices": [
+            {
+                "id": 10002,
+                "unit": "bottle",
+                "unit_size": 50,
+                "price": 282
+            },
+            {
+                "id": 10003,
+                "unit": "100's pack",
+                "unit_size": 1,
+                "price": 830
+            }
+        ]
+    },
+    {
+        "id": 6002,
+        "medicine_name": "Alergo",
+        "category_name": "Syrup",
+        "generic_name": "Amoxicillin Dihydrate",
+        "strength": "200 mg",
+        "manufacturer_name": "Pacific Pharmaceuticals Ltd.",
+        "slug": "zestrium-1000-mg-tablet",
+        "discount_type": "Percentage",
+        "discount_value": 20,
+        "is_discountable": true,
+        "is_available": true,
+        "medicine_image": "Alergo-10MG.webp",
+        "popularity_category": "New",
+        "unit_prices": [
+            {
+                "id": 10004,
+                "unit": "pack",
+                "unit_size": 10,
+                "price": 355
+            },
+            {
+                "id": 10005,
+                "unit": "100's pack",
+                "unit_size": 1,
+                "price": 1065
+            }
+        ]
+    },
+    {
+        "id": 6003,
+        "medicine_name": "Vitalex",
+        "category_name": "Syrup",
+        "generic_name": "Aspirin Monohydrate",
+        "strength": "50 mg",
+        "manufacturer_name": "Remedy Labs",
+        "slug": "healix-500-mg-injection",
+        "discount_type": "Percentage",
+        "discount_value": 18,
+        "is_discountable": true,
+        "is_available": true,
+        "medicine_image": "https://i.ebayimg.com/images/g/VoEAAOSwrMNexbAo/s-l1600.webp",
+        "popularity_category": "Medical",
+        "unit_prices": [
+            {
+                "id": 10006,
+                "unit": "bottle",
+                "unit_size": 50,
+                "price": 101
+            },
+            {
+                "id": 10007,
+                "unit": "1's pack",
+                "unit_size": 50,
+                "price": 40
+            }
+        ]
+    },
+    {
+        "id": 6004,
+        "medicine_name": "Nutravia",
+        "category_name": "Injection",
+        "generic_name": "Ciprofloxacin Monohydrate",
+        "strength": "20 mg",
+        "manufacturer_name": "GlobalMeds",
+        "slug": "curatrol-50-mg-injection",
+        "discount_type": "Percentage",
+        "discount_value": 14,
+        "is_discountable": true,
+        "is_available": true,
+        "medicine_image": "/media/medicines/default-medicine.png",
+        "popularity_category": "New",
+        "unit_prices": [
+            {
+                "id": 10008,
+                "unit": "pack",
+                "unit_size": 100,
+                "price": 420
+            },
+            {
+                "id": 10009,
+                "unit": "100's pack",
+                "unit_size": 1,
+                "price": 194
+            }
+        ]
+    },
+    {
+        "id": 6005,
+        "medicine_name": "Alergo",
+        "category_name": "Syrup",
+        "generic_name": "Aspirin Dihydrate",
+        "strength": "1000 mg",
+        "manufacturer_name": "GlobalMeds",
+        "slug": "zenflex-500-mg-syrup",
+        "discount_type": "Flat",
+        "discount_value": 14,
+        "is_discountable": false,
+        "is_available": true,
+        "medicine_image": "https://splendorco.pk/wp-content/uploads/2023/08/Alergo-10MG.jpg",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 10010,
+                "unit": "bottle",
+                "unit_size": 1,
+                "price": 20
+            },
+            {
+                "id": 10011,
+                "unit": "100's pack",
+                "unit_size": 100,
+                "price": 420
+            }
+        ]
+    },
+    {
+        "id": 6006,
+        "medicine_name": "Healix",
+        "category_name": "Tablet",
+        "generic_name": "Aspirin Dihydrate",
+        "strength": "500 mg",
+        "manufacturer_name": "GlobalMeds",
+        "slug": "proventis-1000-mg-capsule",
+        "discount_type": "Flat",
+        "discount_value": 12,
+        "is_discountable": false,
+        "is_available": true,
+        "medicine_image": "https://ambrosia-global.com/wp-content/uploads/2023/03/healix-hydrogel-1.png",
+        "popularity_category": "Popular",
+        "unit_prices": [
+            {
+                "id": 10012,
+                "unit": "pack",
+                "unit_size": 30,
+                "price": 282
+            },
+            {
+                "id": 10013,
+                "unit": "30's pack",
+                "unit_size": 10,
+                "price": 355
+            }
+        ]
+    },
+    {
+        "id": 6007,
+        "medicine_name": "Zenflex",
+        "category_name": "Syrup",
+        "generic_name": "Ciprofloxacin Dihydrate",
+        "strength": "10 mg",
+        "manufacturer_name": "MediGen",
+        "slug": "proventis-500-mg-tablet",
+        "discount_type": "Flat",
+        "discount_value": 13,
+        "is_discountable": true,
+        "is_available": false,
+        "medicine_image": "https://www.kerrdental.com/sites/default/files/styles/product_-_main_image/public/assorted-490x400.png?itok=0QYqJTXp",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 10014,
+                "unit": "pack",
+                "unit_size": 30,
+                "price": 101
+            },
+            {
+                "id": 10015,
+                "unit": "10's pack",
+                "unit_size": 10,
+                "price": 768
+            }
+        ]
+    },
+    {
+        "id": 6008,
+        "medicine_name": "Nebulisol",
+        "category_name": "Injection",
+        "generic_name": "Esomeprazole Monohydrate",
+        "strength": "200 mg",
+        "manufacturer_name": "MediGen",
+        "slug": "zenflex-1000-mg-capsule",
+        "discount_type": "Percentage",
+        "discount_value": 17,
+        "is_discountable": false,
+        "is_available": false,
+        "medicine_image": "/media/medicines/default-medicine.png",
+        "popularity_category": "New",
+        "unit_prices": [
+            {
+                "id": 10016,
+                "unit": "bottle",
+                "unit_size": 1,
+                "price": 403
+            },
+            {
+                "id": 10017,
+                "unit": "30's pack",
+                "unit_size": 100,
+                "price": 194
+            }
+        ]
+    },
+    {
+        "id": 6009,
+        "medicine_name": "Immunofix",
+        "category_name": "Injection",
+        "generic_name": "Amoxicillin Dihydrate",
+        "strength": "200 mg",
+        "manufacturer_name": "GlobalMeds",
+        "slug": "cardimax-5-mg-tablet",
+        "discount_type": "Flat",
+        "discount_value": 16,
+        "is_discountable": false,
+        "is_available": true,
+        "medicine_image": "https://www.duplex.com.my/cdn/shop/files/ImmunoFixPackshot_New-520036.png?v=1714554012&width=800",
+        "popularity_category": "Popular",
+        "unit_prices": [
+            {
+                "id": 10018,
+                "unit": "pack",
+                "unit_size": 10,
+                "price": 282
+            },
+            {
+                "id": 10019,
+                "unit": "10's pack",
+                "unit_size": 100,
+                "price": 415
+            }
+        ]
+    },
+    {
+        "id": 6010,
+        "medicine_name": "Vitalex",
+        "category_name": "Capsule",
+        "generic_name": "Metformin Trihydrate",
+        "strength": "1000 mg",
+        "manufacturer_name": "PharmaCorp",
+        "slug": "nebulisol-1000-mg-capsule",
+        "discount_type": "Percentage",
+        "discount_value": 7,
+        "is_discountable": true,
+        "is_available": false,
+        "medicine_image": "/media/medicines/default-medicine.png",
+        "popularity_category": "New",
+        "unit_prices": [
+            {
+                "id": 10020,
+                "unit": "bottle",
+                "unit_size": 30,
+                "price": 289
+            },
+            {
+                "id": 10021,
+                "unit": "100's pack",
+                "unit_size": 1,
+                "price": 26
+            }
+        ]
+    },
+    {
+        "id": 6011,
+        "medicine_name": "Immunofix",
+        "category_name": "Capsule",
+        "generic_name": "Ibuprofen Trihydrate",
+        "strength": "50 mg",
+        "manufacturer_name": "Wellcare Industries",
+        "slug": "cardimax-5-mg-syrup",
+        "discount_type": "Flat",
+        "discount_value": 8,
+        "is_discountable": true,
+        "is_available": false,
+        "medicine_image": "https://www.duplex.com.my/cdn/shop/files/ImmunoFixPackshot_New-520036.png?v=1714554012",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 10022,
+                "unit": "pack",
+                "unit_size": 30,
+                "price": 144
+            },
+            {
+                "id": 10023,
+                "unit": "50's pack",
+                "unit_size": 10,
+                "price": 101
+            }
+        ]
+    },
+    {
+        "id": 6012,
+        "medicine_name": "Medicron",
+        "category_name": "Injection",
+        "generic_name": "Paracetamol Trihydrate",
+        "strength": "10 mg",
+        "manufacturer_name": "Healwell Pharma",
+        "slug": "healix-20-mg-syrup",
+        "discount_type": "Percentage",
+        "discount_value": 6,
+        "is_discountable": false,
+        "is_available": false,
+        "medicine_image": "https://5.imimg.com/data5/SELLER/Default/2023/12/365861912/ZO/FO/WZ/12926106/medrocan-1000mg-injection-8ml-500x500.jpg",
+        "popularity_category": "Medical",
+        "unit_prices": [
+            {
+                "id": 10024,
+                "unit": "piece",
+                "unit_size": 10,
+                "price": 464
+            },
+            {
+                "id": 10025,
+                "unit": "50's pack",
+                "unit_size": 50,
+                "price": 40
+            }
+        ]
+    },
+    {
+        "id": 6013,
+        "medicine_name": "Xandril",
+        "category_name": "Injection",
+        "generic_name": "Amoxicillin Dihydrate",
+        "strength": "200 mg",
+        "manufacturer_name": "MediGen",
+        "slug": "dermasol-500-mg-syrup",
+        "discount_type": "Flat",
+        "discount_value": 8,
+        "is_discountable": true,
+        "is_available": true,
+        "medicine_image": "/media/medicines/default-medicine.png",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 10026,
+                "unit": "pack",
+                "unit_size": 100,
+                "price": 97
+            },
+            {
+                "id": 10027,
+                "unit": "50's pack",
+                "unit_size": 100,
+                "price": 98
+            }
+        ]
+    },
+    {
+        "id": 6014,
+        "medicine_name": "Curatrol",
+        "category_name": "Injection",
+        "generic_name": "Aspirin Monohydrate",
+        "strength": "10 mg",
+        "manufacturer_name": "PharmaCorp",
+        "slug": "healix-10-mg-tablet",
+        "discount_type": "Percentage",
+        "discount_value": 12,
+        "is_discountable": true,
+        "is_available": true,
+        "medicine_image": "https://scontent.fdac37-1.fna.fbcdn.net/v/t39.30808-6/304281302_414737770748965_2520419177103829063_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qGlR10a2e5YQ7kNvgGGkqMI&_nc_zt=23&_nc_ht=scontent.fdac37-1.fna&_nc_gid=AzHk3alJY1frUVOvh-VzqzI&oh=00_AYCCA3h7Mn9JKiPndJS3UhWKzaa_ycaHO5JT96NxB7iaIg&oe=671B5090",
+        "popularity_category": "Popular",
+        "unit_prices": [
+            {
+                "id": 10028,
+                "unit": "pack",
+                "unit_size": 10,
+                "price": 403
+            },
+            {
+                "id": 10029,
+                "unit": "50's pack",
+                "unit_size": 30,
+                "price": 415
+            }
+        ]
+    },
+    {
+        "id": 6015,
+        "medicine_name": "Oxitril",
+        "category_name": "Syrup",
+        "generic_name": "Amoxicillin Trihydrate",
+        "strength": "200 mg",
+        "manufacturer_name": "Healwell Pharma",
+        "slug": "gastronil-5-mg-injection",
+        "discount_type": "Percentage",
+        "discount_value": 10,
+        "is_discountable": false,
+        "is_available": true,
+        "medicine_image": "https://botplusweb.farmaceuticos.com/Documentos/AEMPS/Fotos/391488/full/82579_materialas.jpg",
+        "popularity_category": "Popular",
+        "unit_prices": [
+            {
+                "id": 10030,
+                "unit": "piece",
+                "unit_size": 30,
+                "price": 362
+            },
+            {
+                "id": 10031,
+                "unit": "100's pack",
+                "unit_size": 100,
+                "price": 1245
+            }
+        ]
+    },
+    {
+        "id": 6016,
+        "medicine_name": "Xandril",
+        "category_name": "Injection",
+        "generic_name": "Aspirin Trihydrate",
+        "strength": "10 mg",
+        "manufacturer_name": "PharmaCorp",
+        "slug": "alergo-5-mg-capsule",
+        "discount_type": "Percentage",
+        "discount_value": 10,
+        "is_discountable": true,
+        "is_available": true,
+        "medicine_image": "/media/medicines/default-medicine.png",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 10032,
+                "unit": "piece",
+                "unit_size": 1,
+                "price": 94
+            },
+            {
+                "id": 10033,
+                "unit": "30's pack",
+                "unit_size": 10,
+                "price": 724
+            }
+        ]
+    },
+    {
+        "id": 6017,
+        "medicine_name": "Symbicin",
+        "category_name": "Injection",
+        "generic_name": "Ciprofloxacin Monohydrate",
+        "strength": "200 mg",
+        "manufacturer_name": "GlobalMeds",
+        "slug": "dermasol-50-mg-syrup",
+        "discount_type": "Flat",
+        "discount_value": 8,
+        "is_discountable": true,
+        "is_available": true,
+        "medicine_image": "/media/medicines/default-medicine.png",
+        "popularity_category": "Popular",
+        "unit_prices": [
+            {
+                "id": 10034,
+                "unit": "piece",
+                "unit_size": 50,
+                "price": 403
+            },
+            {
+                "id": 10035,
+                "unit": "100's pack",
+                "unit_size": 30,
+                "price": 840
+            }
+        ]
+    },
+    {
+        "id": 6018,
+        "medicine_name": "Cardimax",
+        "category_name": "Capsule",
+        "generic_name": "Aspirin Trihydrate",
+        "strength": "5 mg",
+        "manufacturer_name": "Wellcare Industries",
+        "slug": "immunofix-500-mg-injection",
+        "discount_type": "Percentage",
+        "discount_value": 13,
+        "is_discountable": true,
+        "is_available": false,
+        "medicine_image": "https://polskilek.pl/wp-content/webp-express/webp-images/uploads/2024/07/cardimax-1.png.webp",
+        "popularity_category": "Medical",
+        "unit_prices": [
+            {
+                "id": 10036,
+                "unit": "pack",
+                "unit_size": 100,
+                "price": 444
+            },
+            {
+                "id": 10037,
+                "unit": "30's pack",
+                "unit_size": 50,
+                "price": 777
+            }
+        ]
+    },
+    {
+        "id": 6019,
+        "medicine_name": "Vitalex",
+        "category_name": "Tablet",
+        "generic_name": "Aspirin Trihydrate",
+        "strength": "1000 mg",
+        "manufacturer_name": "Healwell Pharma",
+        "slug": "curatrol-500-mg-capsule",
+        "discount_type": "Flat",
+        "discount_value": 14,
+        "is_discountable": false,
+        "is_available": true,
+        "medicine_image": "https://i.ebayimg.com/images/g/VoEAAOSwrMNexbAo/s-l1600.webp",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 10038,
+                "unit": "bottle",
+                "unit_size": 30,
+                "price": 455
+            },
+            {
+                "id": 10039,
+                "unit": "100's pack",
+                "unit_size": 10,
+                "price": 26
+            }
+        ]
+    },
+    {
+        "id": 6020,
+        "medicine_name": "Crutches",
+        "category_name": "Medical Product",
+        "generic_name": "Syringes",
+        "strength": "N/A",
+        "manufacturer_name": "Remedy Labs",
+        "slug": "surgical-mask",
+        "discount_type": "Percentage",
+        "discount_value": 17,
+        "is_discountable": false,
+        "is_available": false,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Popular",
+        "unit_prices": [
+            {
+                "id": 12040,
+                "unit": "piece",
+                "unit_size": 1,
+                "price": 256
+            },
+            {
+                "id": 12041,
+                "unit": "50's pack",
+                "unit_size": 30,
+                "price": 39
+            }
+        ]
+    },
+    {
+        "id": 6021,
+        "medicine_name": "Surgical Mask",
+        "category_name": "Medical Product",
+        "generic_name": "Crutches",
+        "strength": "N/A",
+        "manufacturer_name": "PharmaCorp",
+        "slug": "crutches",
+        "discount_type": "Percentage",
+        "discount_value": 13,
+        "is_discountable": false,
+        "is_available": false,
+        "medicine_image": "https://mcjohnson.com/wp-content/uploads/2021/03/sku.2-1.jpg",
+        "popularity_category": "New",
+        "unit_prices": [
+            {
+                "id": 12042,
+                "unit": "piece",
+                "unit_size": 30,
+                "price": 13
+            },
+            {
+                "id": 12043,
+                "unit": "50's pack",
+                "unit_size": 1,
+                "price": 288
+            }
+        ]
+    },
+    {
+        "id": 6022,
+        "medicine_name": "Surgical Mask",
+        "category_name": "Medical Product",
+        "generic_name": "Medical Tape",
+        "strength": "N/A",
+        "manufacturer_name": "Healwell Pharma",
+        "slug": "medical-tape",
+        "discount_type": "Flat",
+        "discount_value": 20,
+        "is_discountable": false,
+        "is_available": true,
+        "medicine_image": "https://mcjohnson.com/wp-content/uploads/2021/03/sku.2-1.jpg",
+        "popularity_category": "Upcoming",
+        "unit_prices": [
+            {
+                "id": 12044,
+                "unit": "pack",
+                "unit_size": 50,
+                "price": 20
+            },
+            {
+                "id": 12045,
+                "unit": "1's pack",
+                "unit_size": 30,
+                "price": 1245
+            }
+        ]
+    },
+    {
+        "id": 6023,
+        "medicine_name": "Wheelchair",
+        "category_name": "Medical Product",
+        "generic_name": "Stethoscope",
+        "strength": "N/A",
+        "manufacturer_name": "Wellcare Industries",
+        "slug": "medical-tape",
+        "discount_type": "Percentage",
+        "discount_value": 18,
+        "is_discountable": false,
+        "is_available": false,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "New",
+        "unit_prices": [
+            {
+                "id": 12046,
+                "unit": "piece",
+                "unit_size": 50,
+                "price": 415
+            },
+            {
+                "id": 12047,
+                "unit": "50's pack",
+                "unit_size": 10,
+                "price": 101
+            }
+        ]
+    },
+    {
+        "id": 6024,
+        "medicine_name": "Medical Tape",
+        "category_name": "Medical Product",
+        "generic_name": "Thermometer",
+        "strength": "N/A",
+        "manufacturer_name": "PharmaCorp",
+        "slug": "thermometer",
+        "discount_type": "Percentage",
+        "discount_value": 5,
+        "is_discountable": true,
+        "is_available": true,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 12048,
+                "unit": "pack",
+                "unit_size": 10,
+                "price": 282
+            },
+            {
+                "id": 12049,
+                "unit": "30's pack",
+                "unit_size": 10,
+                "price": 259
+            }
+        ]
+    },
+    {
+        "id": 6025,
+        "medicine_name": "Stethoscope",
+        "category_name": "Medical Product",
+        "generic_name": "Stethoscope",
+        "strength": "N/A",
+        "manufacturer_name": "Wellcare Industries",
+        "slug": "wheelchair",
+        "discount_type": "Flat",
+        "discount_value": 8,
+        "is_discountable": false,
+        "is_available": false,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 12050,
+                "unit": "piece",
+                "unit_size": 10,
+                "price": 282
+            },
+            {
+                "id": 12051,
+                "unit": "30's pack",
+                "unit_size": 100,
+                "price": 303
+            }
+        ]
+    },
+    {
+        "id": 6026,
+        "medicine_name": "Surgical Mask",
+        "category_name": "Medical Product",
+        "generic_name": "Medical Tape",
+        "strength": "N/A",
+        "manufacturer_name": "PharmaCorp",
+        "slug": "crutches",
+        "discount_type": "Flat",
+        "discount_value": 8,
+        "is_discountable": true,
+        "is_available": false,
+        "medicine_image": "https://mcjohnson.com/wp-content/uploads/2021/03/sku.2-1.jpg",
+        "popularity_category": "New",
+        "unit_prices": [
+            {
+                "id": 12052,
+                "unit": "pack",
+                "unit_size": 100,
+                "price": 13
+            },
+            {
+                "id": 12053,
+                "unit": "50's pack",
+                "unit_size": 50,
+                "price": 13
+            }
+        ]
+    },
+    {
+        "id": 6027,
+        "medicine_name": "Stethoscope",
+        "category_name": "Medical Product",
+        "generic_name": "Thermometer",
+        "strength": "N/A",
+        "manufacturer_name": "PharmaCorp",
+        "slug": "surgical-mask",
+        "discount_type": "Percentage",
+        "discount_value": 6,
+        "is_discountable": false,
+        "is_available": true,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Popular",
+        "unit_prices": [
+            {
+                "id": 12054,
+                "unit": "bottle",
+                "unit_size": 50,
+                "price": 355
+            },
+            {
+                "id": 12055,
+                "unit": "1's pack",
+                "unit_size": 1,
+                "price": 39
+            }
+        ]
+    },
+    {
+        "id": 6028,
+        "medicine_name": "Blood Pressure Monitor",
+        "category_name": "Medical Product",
+        "generic_name": "Syringes",
+        "strength": "N/A",
+        "manufacturer_name": "Remedy Labs",
+        "slug": "syringes",
+        "discount_type": "Percentage",
+        "discount_value": 19,
+        "is_discountable": true,
+        "is_available": false,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Popular",
+        "unit_prices": [
+            {
+                "id": 12056,
+                "unit": "bottle",
+                "unit_size": 50,
+                "price": 94
+            },
+            {
+                "id": 12057,
+                "unit": "30's pack",
+                "unit_size": 10,
+                "price": 724
+            }
+        ]
+    },
+    {
+        "id": 6029,
+        "medicine_name": "Syringes",
+        "category_name": "Medical Product",
+        "generic_name": "Syringes",
+        "strength": "N/A",
+        "manufacturer_name": "Pacific Pharmaceuticals Ltd.",
+        "slug": "syringes",
+        "discount_type": "Flat",
+        "discount_value": 9,
+        "is_discountable": false,
+        "is_available": false,
+        "medicine_image": "https://www.advacarepharma.com/static/17a12559512ab0273bbe3fdcf8049b0c/24470/insulin-syringes-parts.webp",
+        "popularity_category": "Upcoming",
+        "unit_prices": [
+            {
+                "id": 12058,
+                "unit": "pack",
+                "unit_size": 10,
+                "price": 403
+            },
+            {
+                "id": 12059,
+                "unit": "10's pack",
+                "unit_size": 50,
+                "price": 512
+            }
+        ]
+    },
+    {
+        "id": 6030,
+        "medicine_name": "Syringes",
+        "category_name": "Medical Product",
+        "generic_name": "Surgical Mask",
+        "strength": "N/A",
+        "manufacturer_name": "Wellcare Industries",
+        "slug": "surgical-mask",
+        "discount_type": "Percentage",
+        "discount_value": 17,
+        "is_discountable": true,
+        "is_available": false,
+        "medicine_image": "/syringe.webp",
+        "popularity_category": "Medical",
+        "unit_prices": [
+            {
+                "id": 12060,
+                "unit": "pack",
+                "unit_size": 1,
+                "price": 355
+            },
+            {
+                "id": 12061,
+                "unit": "100's pack",
+                "unit_size": 30,
+                "price": 1260
+            }
+        ]
+    },
+    {
+        "id": 6031,
+        "medicine_name": "Thermometer",
+        "category_name": "Medical Product",
+        "generic_name": "Wheelchair",
+        "strength": "N/A",
+        "manufacturer_name": "Pacific Pharmaceuticals Ltd.",
+        "slug": "thermometer",
+        "discount_type": "Flat",
+        "discount_value": 13,
+        "is_discountable": true,
+        "is_available": true,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 12062,
+                "unit": "pack",
+                "unit_size": 100,
+                "price": 144
+            },
+            {
+                "id": 12063,
+                "unit": "10's pack",
+                "unit_size": 1,
+                "price": 415
+            }
+        ]
+    },
+    {
+        "id": 6032,
+        "medicine_name": "Syringes",
+        "category_name": "Medical Product",
+        "generic_name": "Surgical Mask",
+        "strength": "N/A",
+        "manufacturer_name": "Healwell Pharma",
+        "slug": "thermometer",
+        "discount_type": "Flat",
+        "discount_value": 20,
+        "is_discountable": true,
+        "is_available": true,
+        "medicine_image": "https://www.advacarepharma.com/static/17a12559512ab0273bbe3fdcf8049b0c/24470/insulin-syringes-parts.webp",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 12064,
+                "unit": "piece",
+                "unit_size": 10,
+                "price": 20
+            },
+            {
+                "id": 12065,
+                "unit": "10's pack",
+                "unit_size": 30,
+                "price": 415
+            }
+        ]
+    },
+    {
+        "id": 6033,
+        "medicine_name": "Gloves",
+        "category_name": "Medical Product",
+        "generic_name": "Wheelchair",
+        "strength": "N/A",
+        "manufacturer_name": "MediGen",
+        "slug": "syringes",
+        "discount_type": "Percentage",
+        "discount_value": 16,
+        "is_discountable": true,
+        "is_available": false,
+        "medicine_image": "https://healthway.com.bd/media/images/Green_Gloves.original.jpegquality-30.format-webp.webp",
+        "popularity_category": "Upcoming",
+        "unit_prices": [
+            {
+                "id": 12066,
+                "unit": "pack",
+                "unit_size": 10,
+                "price": 362
+            },
+            {
+                "id": 12067,
+                "unit": "10's pack",
+                "unit_size": 1,
+                "price": 846
+            }
+        ]
+    },
+    {
+        "id": 6034,
+        "medicine_name": "Syringes",
+        "category_name": "Medical Product",
+        "generic_name": "Stethoscope",
+        "strength": "N/A",
+        "manufacturer_name": "Remedy Labs",
+        "slug": "bandages",
+        "discount_type": "Percentage",
+        "discount_value": 9,
+        "is_discountable": true,
+        "is_available": false,
+        "product_image": "https://www.advacarepharma.com/static/17a12559512ab0273bbe3fdcf8049b0c/24470/insulin-syringes-parts.webp",
+        "popularity_category": "New",
+        "unit_prices": [
+            {
+                "id": 12068,
+                "unit": "pack",
+                "unit_size": 10,
+                "price": 455
+            },
+            {
+                "id": 12069,
+                "unit": "30's pack",
+                "unit_size": 30,
+                "price": 1332
+            }
+        ]
+    },
+    {
+        "id": 6035,
+        "medicine_name": "Gloves",
+        "category_name": "Medical Product",
+        "generic_name": "Blood Pressure Monitor",
+        "strength": "N/A",
+        "manufacturer_name": "Wellcare Industries",
+        "slug": "gloves",
+        "discount_type": "Flat",
+        "discount_value": 12,
+        "is_discountable": false,
+        "is_available": false,
+        "medicine_image": "https://healthway.com.bd/media/images/Green_Gloves.original.jpegquality-30.format-webp.webp",
+        "popularity_category": "Upcoming",
+        "unit_prices": [
+            {
+                "id": 12070,
+                "unit": "bottle",
+                "unit_size": 30,
+                "price": 94
+            },
+            {
+                "id": 12071,
+                "unit": "30's pack",
+                "unit_size": 50,
+                "price": 1209
+            }
+        ]
+    },
+    {
+        "id": 6036,
+        "medicine_name": "Thermometer",
+        "category_name": "Medical Product",
+        "generic_name": "Bandages",
+        "strength": "N/A",
+        "manufacturer_name": "Pacific Pharmaceuticals Ltd.",
+        "slug": "thermometer",
+        "discount_type": "Percentage",
+        "discount_value": 13,
+        "is_discountable": false,
+        "is_available": false,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Upcoming",
+        "unit_prices": [
+            {
+                "id": 12072,
+                "unit": "pack",
+                "unit_size": 100,
+                "price": 144
+            },
+            {
+                "id": 12073,
+                "unit": "10's pack",
+                "unit_size": 100,
+                "price": 1365
+            }
+        ]
+    },
+    {
+        "id": 6037,
+        "medicine_name": "Bandages",
+        "category_name": "Medical Product",
+        "generic_name": "Thermometer",
+        "strength": "N/A",
+        "manufacturer_name": "Pacific Pharmaceuticals Ltd.",
+        "slug": "syringes",
+        "discount_type": "Flat",
+        "discount_value": 11,
+        "is_discountable": true,
+        "is_available": true,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Medical",
+        "unit_prices": [
+            {
+                "id": 12074,
+                "unit": "pack",
+                "unit_size": 50,
+                "price": 49
+            },
+            {
+                "id": 12075,
+                "unit": "100's pack",
+                "unit_size": 30,
+                "price": 444
+            }
+        ]
+    },
+    {
+        "id": 6038,
+        "medicine_name": "Blood Pressure Monitor",
+        "category_name": "Medical Product",
+        "generic_name": "Crutches",
+        "strength": "N/A",
+        "manufacturer_name": "PharmaCorp",
+        "slug": "wheelchair",
+        "discount_type": "Flat",
+        "discount_value": 20,
+        "is_discountable": true,
+        "is_available": true,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Upcoming",
+        "unit_prices": [
+            {
+                "id": 12076,
+                "unit": "pack",
+                "unit_size": 30,
+                "price": 49
+            },
+            {
+                "id": 12077,
+                "unit": "30's pack",
+                "unit_size": 50,
+                "price": 40
+            }
+        ]
+    },
+    {
+        "id": 6039,
+        "medicine_name": "Crutches",
+        "category_name": "Medical Product",
+        "generic_name": "Wheelchair",
+        "strength": "N/A",
+        "manufacturer_name": "GlobalMeds",
+        "slug": "blood-pressure-monitor",
+        "discount_type": "Percentage",
+        "discount_value": 10,
+        "is_discountable": false,
+        "is_available": false,
+        "product_image": "/media/products/default-product.png",
+        "popularity_category": "Top",
+        "unit_prices": [
+            {
+                "id": 12078,
+                "unit": "piece",
+                "unit_size": 30,
+                "price": 444
+            },
+            {
+                "id": 12079,
+                "unit": "10's pack",
+                "unit_size": 100,
+                "price": 806
+            }
+        ]
+    }
+]
