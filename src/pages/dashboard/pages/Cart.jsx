@@ -70,13 +70,13 @@ const Cart = () => {
 
   return (
     <div>
-      <h1 className="text-3xl text-center font-bold mb-10 text-[#28A745]">
+      <h1 className="md:text-3xl text-center font-bold md:mb-10 text-[#28A745]">
         Dashboard | My Cart
       </h1>
-      <div className=" my-10 text-right">
+      <div className="my-4 md:my-10 text-right">
         <NavLink
           to="/dashboard/checkout"
-          className="text-xl hover:bg-green-800 font-bold text-white bg-[#28A745] p-4 rounded-xl"
+          className="md:text-xl hover:bg-green-800 font-bold text-white bg-[#28A745] p-2 text-xs md:p-4 rounded-xl"
         >
           Checkout
         </NavLink>
@@ -108,29 +108,29 @@ const Cart = () => {
                   >
                     <Table.Cell>{serialno++}</Table.Cell>
                     <Table.Cell>
-                      <img className="w-20" src={`${item.img}`} />
+                      <img className="w-10 md:w-20" src={`${item.img}`} />
                     </Table.Cell>
                     <Table.Cell>
                       <h1 className="font-bold md:text-xl">
                         {item.productName}
                       </h1>
                     </Table.Cell>
-                    <Table.Cell className="font-bold md:text-xl">
+                    <Table.Cell className="font-bold text-xs md:text-xl">
                       {item.selectedSize}
                     </Table.Cell>
-                    <Table.Cell className="font-bold md:text-xl">
+                    <Table.Cell className="font-bold text-xs md:text-xl">
                       {item.category}
                     </Table.Cell>
-                    <Table.Cell className="font-bold md:text-xl">
+                    <Table.Cell className="font-bold text-xs md:text-xl">
                       {item.manufacturer}
                     </Table.Cell>
-                    <Table.Cell className="font-bold md:text-xl">
+                    <Table.Cell className="font-bold text-xs md:text-xl">
                       {item.selectedPrice}
                     </Table.Cell>
                     <Table.Cell>
                       <button
                         onClick={() => handleDeleteItem(item._id)}
-                        className="bg-[#d73b3b] md:text-xl p-2 rounded-xl hover:bg-red-950 text-white text-xs  md:text-md md:p-4"
+                        className="bg-[#d73b3b] text-xs md:text-xl p-2 rounded-xl hover:bg-red-950 text-white text-xs  md:text-md md:p-4"
                       >
                         Delete
                       </button>

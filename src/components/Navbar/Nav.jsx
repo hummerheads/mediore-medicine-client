@@ -245,7 +245,7 @@ const Nav = () => {
           ) : (
             <button
               onClick={() => (window.location.href = "/login")}
-              className="btn bg-[#28A745] text-white hover:bg-green-700"
+              className="px-2  rounded-xl font-semibold bg-[#28A745] text-white hover:bg-green-700"
             >
               Login
             </button>

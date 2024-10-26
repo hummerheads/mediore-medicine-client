@@ -101,23 +101,23 @@ const Register = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row my-10 md:mx-20">
+    <div className="min-h-screen mx-4 flex flex-col lg:flex-row my-10 md:mx-20">
       <div
-        className="lg:w-2/3 bg-cover bg-center relative flex items-center justify-center"
+        className="lg:w-2/3 bg-cover  bg-center relative flex items-center justify-center"
         style={{
           backgroundImage: "url('/capsule.svg')",
         }}
       >
-        <div className="bg-black bg-opacity-60 p-2 md:p-10 rounded-lg text-white md:mx-0 mx-2">
-          <h2 className="md:text-4xl text-xl font-bold mb-4 text-justify">
+        <div className="bg-black p-4 bg-opacity-60 md:p-10 rounded-lg text-white md:mx-0 mx-2">
+          <h2 className="md:text-4xl text-lg font-bold mb-4 text-center md:text-justify">
             Join Us in Your Health Journey
           </h2>
-          <p className="mb-6 text-justify">
+          <p className="mb-6 text-xs text-justify">
             At Mediore, we prioritize your health and well-being. By joining our
             community, you gain access to high-quality medicines and expert
             advice from our pharmacists.
           </p>
-          <p className="text-justify">
+          <p className="text-xs text-justify">
             Register now to enjoy a seamless shopping experience and get your
             medicines delivered right to your doorstep.
           </p>
@@ -126,7 +126,7 @@ const Register = () => {
 
       <div className="lg:w-1/2 p-2 md:p-10 flex flex-col justify-center ">
         <div className="max-w-md mx-auto w-full">
-          <h2 className="text-3xl font-bold mb-6 text-center">Register</h2>
+          <h2 className="text-lg md:text-3xl font-bold mb-6 text-center">Register</h2>
 
           <button
             onClick={handleGoogleSignIn}
