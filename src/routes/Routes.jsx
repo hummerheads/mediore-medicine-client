@@ -54,7 +54,7 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <ProductDetails></ProductDetails>,
-        loader: () => "/fake_products_40_with_popularity.json",
+        loader: () => "https://mediore-medicine-server.vercel.app/allmeds",
       },
       {
         path: "/secret",

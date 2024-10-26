@@ -6,7 +6,7 @@ const PopularProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
 
     useEffect(() => {
-        fetch("/fake_products_40_with_popularity.json")
+        fetch("https://mediore-medicine-server.vercel.app/allmeds")
           .then((res) => res.json())
           .then((data) => {
             const newProducts = data

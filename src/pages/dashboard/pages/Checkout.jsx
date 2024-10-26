@@ -13,7 +13,7 @@ const Checkout = () => {
   const [paymentMethod, setPaymentMethod] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/cart")
+    fetch("https://mediore-medicine-server.vercel.app/cart")
       .then((res) => res.json())
       .then((data) => {
         setCartItems(data);

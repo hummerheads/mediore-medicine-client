@@ -12,7 +12,7 @@ const ProductDashboard = () => {
   const [unitCount, setUnitCount] = useState(1);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allmeds")
+    fetch("https://mediore-medicine-server.vercel.app/allmeds")
       .then((res) => res.json())
       .then((data) => {
         setAllProducts(data);
@@ -44,7 +44,7 @@ const ProductDashboard = () => {
         });
       }
     });
-    fetch(`http://localhost:5000/allMeds/${itemId}`, {
+    fetch(`https://mediore-medicine-server.vercel.app/allMeds/${itemId}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -83,8 +83,8 @@ const ProductDashboard = () => {
 
   const handleSaveChanges = () => {
     const url = editingProduct
-      ? `http://localhost:5000/allMeds/${editingProduct._id}`
-      : "http://localhost:5000/allMeds";
+      ? `https://mediore-medicine-server.vercel.app/allMeds/${editingProduct._id}`
+      : "https://mediore-medicine-server.vercel.app/allMeds";
     const method = editingProduct ? "PUT" : "POST";
 
     fetch(url, {

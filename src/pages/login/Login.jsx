@@ -69,7 +69,7 @@ const Login = () => {
         imageAlt: "Custom image",
         imageClass: 'rounded-full'  
       });
-      fetch("http://localhost:5000/allusers", {
+      fetch("https://mediore-medicine-server-pw7e41obb.vercel.app/allusers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

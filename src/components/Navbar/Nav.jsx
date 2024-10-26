@@ -13,7 +13,7 @@ const Nav = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allmeds/")
+    fetch("https://mediore-medicine-server.vercel.app/allmeds/")
       .then((res) => res.json())
       .then((data) => {
         setAllProducts(data);
@@ -42,7 +42,7 @@ const Nav = () => {
     }
   };
   useEffect(() => {
-    fetch("http://localhost:5000/cart")
+    fetch("https://mediore-medicine-server.vercel.app/cart")
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched Cart Data: ", data);
@@ -82,7 +82,7 @@ const Nav = () => {
   );
 
   const handleDeleteItem = (itemId) => {
-    fetch(`http://localhost:5000/cart/${itemId}`, {
+    fetch(`https://mediore-medicine-server.vercel.app/cart/${itemId}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -206,7 +206,7 @@ const Nav = () => {
               <label htmlFor="my-drawer-4" className="drawer-button ">
                 <img className="w-8 h-8" src="/cart.svg" alt="Cart Icon" />
                 <Badge
-                  className="absolute top-0 right-0 transform translate-x-1 -translate-y-1"
+                  className="bg-green-400 text-white absolute bottom-5 left-2 transform translate-x-1 -translate-y-1"
                   color="success"
                 >
                   +{userCartItems.length}
@@ -224,7 +224,7 @@ const Nav = () => {
                   alt="User settings"
                   img={user.photoURL || ""}
                   rounded
-                  className="mr-4"
+                  className="mr-"
                 />
               }
             >
@@ -255,19 +255,19 @@ const Nav = () => {
         </div>
 
         <Navbar.Collapse className="items-center my-auto flex-wrap-nowrap whitespace-nowrap">
-          <Navbar.Link href="/" className="md:text-xl text-[#28A745] uppercase">
+          <Navbar.Link href="/" className="md:text-base text-[#28A745] uppercase">
             Home
           </Navbar.Link>
-          <Navbar.Link className="md:text-xl text-[#28A745] uppercase" href="/faqs">
+          <Navbar.Link className="md:text-base text-[#28A745] uppercase" href="/faqs">
             FAQs
           </Navbar.Link>
-          <Navbar.Link className="md:text-xl text-[#28A745] uppercase" href="/services">
+          <Navbar.Link className="md:text-base text-[#28A745] uppercase" href="/services">
             Services
           </Navbar.Link>
-          <Navbar.Link className="md:text-xl text-[#28A745] uppercase" href="/product">
+          <Navbar.Link className="md:text-base text-[#28A745] uppercase" href="/product">
             Products
           </Navbar.Link>
-          <Navbar.Link className="md:text-xl text-[#28A745] uppercase" href="/contact">
+          <Navbar.Link className="md:text-base text-[#28A745] uppercase" href="/contact">
             Contact
           </Navbar.Link>
         </Navbar.Collapse>

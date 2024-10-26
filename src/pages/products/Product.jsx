@@ -17,7 +17,7 @@ const Product = () => {
     const fetchProducts = async () => {
       try {
          const token = localStorage.getItem("access Token");
-         const response = await fetch("http://localhost:5000/allmeds", {
+         const response = await fetch("https://mediore-medicine-server.vercel.app/allmeds", {
             method: "GET",
             headers: {
                Authorization: `Bearer ${token}`, 

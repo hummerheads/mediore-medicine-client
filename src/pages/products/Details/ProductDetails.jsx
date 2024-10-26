@@ -20,7 +20,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/allmeds/');
+        const response = await fetch('https://mediore-medicine-server.vercel.app/allmeds/');
         const data = await response.json();
         setAllMeds(data);
       } catch (error) {
@@ -68,7 +68,7 @@ const ProductDetails = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/cart", {
+      const response = await fetch("https://mediore-medicine-server.vercel.app/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

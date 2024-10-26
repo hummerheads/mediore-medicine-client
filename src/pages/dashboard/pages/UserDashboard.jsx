@@ -8,7 +8,7 @@ const UserDashboard = () => {
     const [users, setUsers] = useState([]);
     const { user } = useContext(AuthContext);
     useEffect(() => {
-        fetch("http://localhost:5000/cart")
+        fetch("https://mediore-medicine-server.vercel.app/cart")
           .then((res) => res.json())
           .then((data) => {
             console.log("Fetched Cart Data: ", data);
@@ -29,7 +29,7 @@ const UserDashboard = () => {
         (item) => item.userEmail === user?.email
       );
     useEffect(() => {
-        fetch("http://localhost:5000/allusers")
+        fetch("https://mediore-medicine-server.vercel.app/allusers")
           .then((res) => res.json())
           .then((data) => {
             setUsers(data);

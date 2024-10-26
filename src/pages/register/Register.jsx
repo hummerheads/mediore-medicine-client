@@ -38,7 +38,7 @@ const Register = () => {
         updateUserProfile(name, photoURL)
           .then(() => {
             console.log("User profile updated");
-            fetch("http://localhost:5000/allusers", {
+            fetch("https://mediore-medicine-server.vercel.app/allusers", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         console.log("Google user:", user);
-        fetch("http://localhost:5000/allusers", {
+        fetch("https://mediore-medicine-server.vercel.app/allusers", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
