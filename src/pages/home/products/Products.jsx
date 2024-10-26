@@ -31,7 +31,7 @@ const Products = ({ product }) => {
         <p className="font-normal text-gray-700 dark:text-gray-400">
           $ {discount_value}
         </p>
-        <NavLink to={`/product/${id}`} className="w-full flex gap-2 justify-center bg-[#28A745] bg-opacity-20 py-4 rounded-xl hover:bg-slate-500 hover:text-white">
+        <NavLink to={`/product/${id}`} className="w-full flex gap-2 justify-center bg-[#28A745] text-white font-bold py-4 rounded-xl hover:bg-green-300 hover:text-gray-600">
           <p>View More</p>
         </NavLink>
       </Card>

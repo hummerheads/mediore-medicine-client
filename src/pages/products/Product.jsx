@@ -77,10 +77,10 @@ const Product = () => {
   };
 
   return (
-    <div className="md:my-10">
+    <div className="md:mb-10">
       <div className="mb-5">
-        <h2 className="text-2xl md:text-5xl text-[#28A745] pb-4 md:pb-10 font-bold text-center">
-          Filter Products
+        <h2 className="text-2xl md:text-5xl uppercase text-[#28A745] pb-4 md:pb-10 font-bold text-center">
+        Products
         </h2>
 
         <div className="flex gap-1 md:space-x-4 mb-4 items-center justify-center ">

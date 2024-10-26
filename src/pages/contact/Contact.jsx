@@ -2,9 +2,9 @@ import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid';
 
 const Contact = () => {
   return (
-    <div className="md:my-20">
+    <div className="md:mb-20">
       <div className="md:pb-10 pb-4">
-        <h1 className="text-[#28A745] text-center md:text-5xl font-bold">Contact Us</h1>
+        <h1 className="text-[#28A745] uppercase text-center md:text-5xl font-bold">Contact Us</h1>
         <p className="text-center text-gray-700 font-medium text-xs md:text-lg">
           Any question or remarks? Just write us a message!
         </p>

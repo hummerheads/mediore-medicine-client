@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Products from "../products/Products";
+import { NavLink } from "react-router-dom";
 
 const NewProducts = () => {
   const [allProducts, setAllProducts] = useState([]);
@@ -23,13 +24,13 @@ const NewProducts = () => {
     <div className="md:mx-20 md:my-20 my-10 ">
       <div>
         <div className="md:flex justify-between items-center">
-          <h1 className="text-gray-800 text-center md:text-4xl font-bold">
+          <h1 className="uppercase text-[#28A745] text-center md:text-4xl font-bold">
             New Products
           </h1>
-          <div className="flex justify-center">
+          <NavLink to="/product" className="flex justify-center">
             <p className="text-green-900">View All</p>
             <img src="/btnArrow.svg" alt="" />
-          </div>
+          </NavLink>
         </div>
       </div>
       <div className="md:grid grid-cols-4 mt-10 gap-5">
