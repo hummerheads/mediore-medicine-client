@@ -124,16 +124,14 @@ const Nav = () => {
           </div>
         </Navbar.Brand>
 
-        <div className="">
+        <div className="z-50">
           <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content"></div>
-          <div className="drawer-side z-100">
+          <div className="drawer-side ">
             <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
             <Sidebar aria-label="Sidebar with logo branding example">
               <Sidebar.Items>
                 <Sidebar.ItemGroup>
-                  <Sidebar.Item className="my-10"></Sidebar.Item>
-
                   {!loading && userCartItems.length > 0 ? (
                     userCartItems.map((item) => (
                       <Sidebar.Item
@@ -174,7 +172,7 @@ const Nav = () => {
 
                   <Sidebar.Item>
                     <h3 className="font-bold">
-                      Total Price:{" "}
+                      Total Price:
                       <span className="text-xl">
                         $
                         {userCartItems.reduce(
@@ -224,7 +222,7 @@ const Nav = () => {
                   alt="User settings"
                   img={user.photoURL || ""}
                   rounded
-                  className="mr-"
+                  className=" md:w-auto w-auto h-[20px]"
                 />
               }
             >

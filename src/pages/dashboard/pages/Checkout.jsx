@@ -51,7 +51,11 @@ const Checkout = () => {
   };
 
   if (loading) {
-    return <div className="text-center">Loading...</div>;
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <div className="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-[#28A745]"></div>
+      </div>
+    );
   }
 
   const totalPrice = userCartItems.reduce(

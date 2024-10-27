@@ -25,7 +25,7 @@ const UpcomingProducts = () => {
       <div>
         <div className="md:flex justify-between items-center">
           <h1 className="text-[#28A745] uppercase text-center md:text-4xl font-bold">
-          Upcoming Products
+            Upcoming Products
           </h1>
           <NavLink to="/product" className="flex justify-center">
             <p className="text-green-900">View All</p>
@@ -39,7 +39,9 @@ const UpcomingProducts = () => {
             <Products className="md:w-1/4" key={product.id} product={product} />
           ))
         ) : (
-          <p>No products available</p>
+          <div className="flex items-center justify-center h-screen">
+            <div className="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-[#28A745]"></div>
+          </div>
         )}
       </div>
     </div>

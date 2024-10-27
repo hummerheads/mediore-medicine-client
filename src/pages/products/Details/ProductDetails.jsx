@@ -90,22 +90,22 @@ const ProductDetails = () => {
   return (
     <div className="md:mx-20 my-5 md:my-10 mx-4">
       {product ? (
-        <div className="md:flex gap-5 md:gap-10 justify-center">
-          <div>
+        <div className="md:flex md:gap-10 justify-center my-10">
+          <div className="my-10">
             <img
               className="w-auto mx-auto h-[50vh] shadow-2xl rounded-xl"
               src={product.medicine_image || "/default-image.png"}
               alt={product.medicine_name}
             />
           </div>
-          <div className="md:w-1/2 py-5 pb-20 text-white text-center md:space-y-3 md:p-10 shadow-2xl rounded-xl bg-[#28A745]">
-            <h2 className="md:text-5xl font-bold text-xl">
+          <div className="md:w-1/2 py-5  text-white md:space-y-3 md:p-10 shadow-2xl rounded-xl bg-[#28A745] space-y-4 px-5">
+            <h2 className="md:text-5xl font-bold text-2xl">
               {product.medicine_name}
               <span className="font-normal md:text-xl text-xs"> {product.strength}</span>
             </h2>
-            <h2 className="md:text-xl text-md">{product.category_name}</h2>
-            <h2 className="md:text-xl text-md">{product.generic_name}</h2>
-            <h2 className="md:text-xl text-md">{product.manufacturer_name}</h2>
+            <h2 className="md:text-xl text-md"><span className="font-semibold">Category:</span> {product.category_name}</h2>
+            <h2 className="md:text-xl text-md"><span className="font-semibold">Generic:</span>{product.generic_name}</h2>
+            <h2 className="md:text-xl text-md"><span className="font-semibold">Manufacturer:</span>{product.manufacturer_name}</h2>
             <h2 className="md:text-xl text-md">
               Price:
               <span className="font-bold md:text-2xl "> 
@@ -116,7 +116,7 @@ const ProductDetails = () => {
             <div>
               <button
                 onClick={toggleDropdown}
-                className="bg-white text-black rounded-md text-xs p-1 md:p-2 hover:bg-gray-500 hover:text-white md:text-xl"
+                className="bg-white text-black rounded-md text-xs p-2 md:p-2 hover:bg-gray-500 hover:text-white md:text-xl"
               >
                 {selectedSize || "Select Size"}
               </button>
@@ -153,9 +153,9 @@ const ProductDetails = () => {
       ) : (
         <p>Loading...</p>
       )}
-      <div className="text-center my-5 md:my-10">
+      <div className="mt-20 text-center my-5 md:my-10">
         <Link
-          className="p-2 font-bold rounded-xl bg-[#28A745] text-white hover:bg-green-700 text-xs md:text-2xl"
+          className=" p-2 font-bold rounded-xl bg-[#28A745] text-white hover:bg-green-700 text-xs md:text-2xl"
           to={"/product"}
         >
           Go to All Products

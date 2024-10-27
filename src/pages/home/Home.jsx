@@ -11,7 +11,7 @@ import UpcomingProducts from "./upcoming Products/UpcomingProducts";
 
 const Home = () => {
     return (
-        <div>
+        <div className="md:space-y-36 md:mb-20 space-y-14 mb-10">
             <Banner></Banner>
             <Paths></Paths>
             <Products></Products>

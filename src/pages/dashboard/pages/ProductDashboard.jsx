@@ -127,9 +127,17 @@ const ProductDashboard = () => {
 
   let serialno = 1;
 
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <div className="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-[#28A745]"></div>
+      </div>
+    );
+  }
+
   return (
     <div>
-      <h1 className="text-3xl text-center font-bold mb-10 text-[#28A745]">
+      <h1 className="text-md md:text-3xl text-center my-5 font-bold mb-10 text-[#28A745]">
         Dashboard | ALL Products
       </h1>
       <div className="flex justify-end mb-4">
@@ -158,7 +166,7 @@ const ProductDashboard = () => {
               })),
             });
           }}
-          className="bg-[#28A745] p-2 rounded-xl hover:bg-green-600 text-white"
+          className="bg-[#28A745] p-2 text-xs rounded-md hover:bg-green-600 text-white"
         >
           Add New Product
         </button>
@@ -203,13 +211,13 @@ const ProductDashboard = () => {
                     <div className="flex gap-2">
                       <button
                         onClick={() => handleEditClick(item)}
-                        className="bg-blue-500 px-4 py-2 rounded-xl hover:bg-blue-700 text-white text-xs md:text-lg"
+                        className="bg-blue-500  px-4 py-2 rounded-md hover:bg-blue-700 text-white text-xs "
                       >
                         Edit
                       </button>
                       <button
                         onClick={() => handleDeleteItem(item._id)}
-                        className="bg-[#d73b3b] px-4 py-2 rounded-xl hover:bg-red-950 text-white text-xs md:text-lg"
+                        className="bg-[#d73b3b] px-4 py-2 rounded-md hover:bg-red-950 text-white text-xs"
                       >
                         Delete
                       </button>

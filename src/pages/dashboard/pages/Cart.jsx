@@ -67,7 +67,13 @@ const Cart = () => {
       });
   };
   let serialno = 1;
-
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <div className="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-[#28A745]"></div>
+      </div>
+    );
+  }
   return (
     <div>
       <h1 className="md:text-3xl text-center font-bold md:mb-10 text-[#28A745]">
@@ -76,7 +82,7 @@ const Cart = () => {
       <div className="my-4 md:my-10 text-right">
         <NavLink
           to="/dashboard/checkout"
-          className="md:text-xl hover:bg-green-800 font-bold text-white bg-[#28A745] p-2 text-xs md:p-4 rounded-xl"
+          className="md:text-md hover:bg-green-800 font-bold text-white bg-[#28A745] p-2 text-xs md:p-3 rounded-md"
         >
           Checkout
         </NavLink>
@@ -103,7 +109,7 @@ const Cart = () => {
               {!loading && userCartItems.length > 0 ? (
                 userCartItems.map((item) => (
                   <Table.Row
-                    className="bg-white dark:border-gray-700 dark:bg-gray-800"
+                    className="bg-white dark:border-gray-800 dark:bg-gray-800 text-gray-800"
                     key={item._id}
                   >
                     <Table.Cell>{serialno++}</Table.Cell>
@@ -111,26 +117,26 @@ const Cart = () => {
                       <img className="w-10 md:w-20" src={`${item.img}`} />
                     </Table.Cell>
                     <Table.Cell>
-                      <h1 className="font-bold md:text-xl">
+                      <h1 className=" md:text-md">
                         {item.productName}
                       </h1>
                     </Table.Cell>
-                    <Table.Cell className="font-bold text-xs md:text-xl">
+                    <Table.Cell className=" text-xs md:text-sm">
                       {item.selectedSize}
                     </Table.Cell>
-                    <Table.Cell className="font-bold text-xs md:text-xl">
+                    <Table.Cell className="text-xs md:text-sm">
                       {item.category}
                     </Table.Cell>
-                    <Table.Cell className="font-bold text-xs md:text-xl">
+                    <Table.Cell className="text-xs md:text-sm">
                       {item.manufacturer}
                     </Table.Cell>
-                    <Table.Cell className="font-bold text-xs md:text-xl">
-                      {item.selectedPrice}
+                    <Table.Cell className=" text-xs md:text-sm">
+                      ${item.selectedPrice}
                     </Table.Cell>
                     <Table.Cell>
                       <button
                         onClick={() => handleDeleteItem(item._id)}
-                        className="bg-[#d73b3b] md:text-xl p-2 rounded-xl hover:bg-red-950 text-white text-xs  md:text-md md:p-4"
+                        className="bg-[#d73b3b] md:text-md p-2 rounded-md hover:bg-red-950 text-white text-xs  md:text-md md:py-2 md:px-3"
                       >
                         Delete
                       </button>

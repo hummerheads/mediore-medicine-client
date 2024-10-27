@@ -16,7 +16,7 @@ const Products = ({ product }) => {
 
   return (
     <Link to={`/product/${id}`}> 
-      <Card className="w-full shadow-xl my-2">
+      <Card className="w-full shadow-md my-2">
         <div className="mx-auto w-56 h-36 md:h-64 overflow-hidden">
           <img
             src={medicine_image}

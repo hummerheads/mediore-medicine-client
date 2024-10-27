@@ -4,6 +4,7 @@ import Products from "../home/products/Products";
 const Product = () => {
   const [allProducts, setAllProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState({
     id: [],
     category_name: [],
@@ -40,6 +41,7 @@ const Product = () => {
          const data = await response.json();
          setAllProducts(data);
          setFilteredProducts(data);
+         setLoading(false);
    
          const id = [...new Set(data.map((product) => product.id))];
          const categories = [...new Set(data.map((product) => product.category_name))];
@@ -74,6 +76,14 @@ const Product = () => {
     setSelectedOption("");
     setFilteredProducts(allProducts);
   };
+
+  if (loading) {
+    return (
+      <div className='flex items-center justify-center h-screen'>
+        <div className='animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-[#28A745]'></div>
+      </div>
+    );
+  }
 
   return (
     <div className="md:mb-10">
@@ -121,7 +131,7 @@ const Product = () => {
         )}
       </div>
 
-      <div className="grid md:grid-cols-4 gap-5">
+      <div className="grid md:grid-cols-4 gap-5 mx-4 md:mx-0">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <Products key={product.id} product={product} />

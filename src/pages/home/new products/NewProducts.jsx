@@ -39,7 +39,9 @@ const NewProducts = () => {
             <Products className="md:w-1/4" key={product.id} product={product} />
           ))
         ) : (
-          <p>No products available</p>
+          <div className="flex items-center justify-center h-screen">
+            <div className="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-[#28A745]"></div>
+          </div>
         )}
       </div>
     </div>
