@@ -47,6 +47,8 @@ const Login = () => {
           imageClass: 'rounded-full'  
         });
         console.log(user);
+        navigate(from, { replace: true });
+
       })
       .catch((error) => {
         console.error("Error signing in:", error);

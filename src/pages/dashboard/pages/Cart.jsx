@@ -130,7 +130,7 @@ const Cart = () => {
                     <Table.Cell>
                       <button
                         onClick={() => handleDeleteItem(item._id)}
-                        className="bg-[#d73b3b] text-xs md:text-xl p-2 rounded-xl hover:bg-red-950 text-white text-xs  md:text-md md:p-4"
+                        className="bg-[#d73b3b] md:text-xl p-2 rounded-xl hover:bg-red-950 text-white text-xs  md:text-md md:p-4"
                       >
                         Delete
                       </button>
