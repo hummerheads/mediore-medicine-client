@@ -127,7 +127,7 @@ const Nav = () => {
         <div className="">
           <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content"></div>
-          <div className="drawer-side">
+          <div className="drawer-side z-100">
             <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
             <Sidebar aria-label="Sidebar with logo branding example">
               <Sidebar.Items>
