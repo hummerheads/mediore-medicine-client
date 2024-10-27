@@ -47,6 +47,8 @@ const Login = () => {
           imageClass: 'rounded-full'  
         });
         console.log(user);
+        navigate(from, { replace: true });
+
       })
       .catch((error) => {
         console.error("Error signing in:", error);
@@ -91,29 +93,29 @@ const Login = () => {
     });
   };
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row my-10 md:mx-20">
+    <div className="min-h-screen my-5 mx-4 flex flex-col lg:flex-row md:my-10 md:mx-20">
       <div
         className="lg:w-2/3 bg-cover bg-center relative flex items-center justify-center"
         style={{
           backgroundImage: "url('/capsule.svg')",
         }}
       >
-        <div className="bg-black bg-opacity-60 p-2 md:p-10 rounded-lg text-white md:mx-0 mx-2">
-          <h2 className="md:text-4xl text-xl font-bold mb-4 text-justify">
+        <div className="bg-black px-4 py-4 my-4 bg-opacity-60 p-2 md:p-10 rounded-lg text-white md:mx-0 mx-2">
+          <h2 className=" md:text-4xl text-lg text-center font-bold mb-4 md:text-justify">
             Your Health, Our Priority
           </h2>
-          <p className="mb-6 text-justify">
+          <p className="mb-6 text-justify text-xs">
             At Mediore, we are dedicated to providing you with high-quality
             medicines and health products to ensure your well-being. Our expert
             pharmacists are here to assist you with any questions you may have
             regarding your medications and overall health.
           </p>
-          <p className="mb-6 text-justify">
+          <p className="mb-6 text-justify text-xs" >
             Enjoy a seamless shopping experience with our easy-to-use online
             platform. Get your medicines delivered right to your doorstep,
             ensuring convenience and reliability.
           </p>
-          <p className="text-justify">
+          <p className="text-justify text-xs">
             Trust us to be your partner in health. Your safety and satisfaction
             are our top priorities.
           </p>
@@ -122,7 +124,7 @@ const Login = () => {
 
       <div className="lg:w-1/2 p-2 md:p-10 flex flex-col justify-center ">
         <div className="max-w-md mx-auto w-full">
-          <h2 className="text-3xl font-bold mb-6 text-center">Log in</h2>
+          <h2 className="text-lg md:text-3xl font-bold mb-6 text-center">Log in</h2>
 
           <button
             onClick={handleGoogleSignIn}

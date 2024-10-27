@@ -57,7 +57,6 @@ const Product = () => {
       }
    };
    
-
     fetchProducts();
   }, []);
 
@@ -82,8 +81,7 @@ const Product = () => {
         <h2 className="text-2xl md:text-5xl uppercase text-[#28A745] pb-4 md:pb-10 font-bold text-center">
         Products
         </h2>
-
-        <div className="flex gap-1 md:space-x-4 mb-4 items-center justify-center ">
+        <div className="flex flex-wrap gap-1 md:space-x-4 mb-4 items-center justify-center ">
           {Object.keys(filters).map((filterType) => (
             <button
               key={filterType}
@@ -104,7 +102,6 @@ const Product = () => {
             </button>
           ))}
         </div>
-
         {activeFilter && (
           <div className="flex flex-wrap mt-2 justify-center">
             {filters[activeFilter].map((option) => (

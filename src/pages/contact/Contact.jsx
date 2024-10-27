@@ -2,7 +2,7 @@ import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid';
 
 const Contact = () => {
   return (
-    <div className="md:mb-20">
+    <div className="md:mb-20 mx-4">
       <div className="md:pb-10 pb-4">
         <h1 className="text-[#28A745] uppercase text-center md:text-5xl font-bold">Contact Us</h1>
         <p className="text-center text-gray-700 font-medium text-xs md:text-lg">
@@ -67,7 +67,7 @@ const Contact = () => {
             </div>
             <div>
               <label className="block mb-2 font-medium">Select Subject?</label>
-              <div className="flex items-center space-x-4">
+              <div className="flex flex-wrap items-center space-x-4">
                 <label className="flex items-center space-x-2">
                   <input
                     type="radio"

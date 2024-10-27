@@ -1,7 +1,7 @@
-import { Avatar, Badge, Dropdown, Navbar } from "flowbite-react";
+import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import { Link,  NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Sidebar } from "flowbite-react";
 
 const Nav = () => {
@@ -138,31 +138,34 @@ const Nav = () => {
                     userCartItems.map((item) => (
                       <Sidebar.Item
                         key={item._id}
-                        className="my-2 flex justify-center text-center items-center space-y-2"
+                        className="bg-green-300 my-4 p-4 flex flex-col md:flex-row items-center md:items-start shadow-lg rounded-lg transition-transform transform hover:scale-105"
                       >
-                        <img
-                          className="w-16 md:w-20 mx-auto"
-                          src={`${item.img}`}
-                          alt=""
-                        />
-                        <h1 className="font-bold md:text-2xl">
-                          {item.productName}
-                        </h1>
-                        <h3 className="md:text-lg text-xs">
-                          <span className="font-bold">Size:</span>{" "}
-                          <span>{item.selectedSize}</span>
-                        </h3>
-                        <p className="text-xs md:text-lg ">
-                          <span className="font-bold ">Price: </span> $
-                          {item.selectedPrice}
-                        </p>
-                        <button
-                          onClick={() => handleDeleteItem(item._id)}
-                          className="bg-[#d73b3b] p-2 rounded-xl text-white text-xs  md:text-md mt-2"
-                        >
-                          Delete this Item
-                        </button>
-                        <hr className="my-2" />
+                        <div className="w-full md:w-1/2 flex justify-center mx-auto">
+                          <img
+                            className="w-16 md:w-28 lg:w-24 rounded-md mx-auto"
+                            src={`${item.img}`}
+                            alt={item.productName}
+                          />
+                        </div>
+                        <div className="w-full md:w-2/3 mt-4 md:mt-0 md:ml-6 text-center md:text-left">
+                          <h1 className="font-bold text-lg md:text-xl">
+                            {item.productName}
+                          </h1>
+                          <h3 className="text-gray-600 text-sm md:text-lg mt-2">
+                            <span className="font-bold">Size:</span>{" "}
+                            {item.selectedSize}
+                          </h3>
+                          <p className="text-gray-800 text-sm md:text-lg mt-1">
+                            <span className="font-bold">Price:</span> $
+                            {item.selectedPrice}
+                          </p>
+                          <button
+                            onClick={() => handleDeleteItem(item._id)}
+                            className="bg-red-500 text-white text-xs md:text-sm lg:text-md px-4 py-2 rounded-md mt-4 hover:bg-red-600 transition-colors"
+                          >
+                            Delete this Item
+                          </button>
+                        </div>
                       </Sidebar.Item>
                     ))
                   ) : (
@@ -184,13 +187,13 @@ const Nav = () => {
                   <Sidebar.Item className="text-center">
                     <NavLink
                       to={"/product"}
-                      className="bg-[#28A745] text-white p-2 rounded-xl"
+                      className="bg-[#28A745] px-4 text-white p-2 rounded-xl"
                     >
                       Go Back to All Products
                     </NavLink>
                   </Sidebar.Item>
                   <Sidebar.Item className="text-center">
-                    <NavLink className="bg-[#28A745] text-white p-2 rounded-xl">
+                    <NavLink to="/dashboard/checkout" className="bg-[#28A745] px-4 text-white p-2 rounded-xl">
                       Checkout
                     </NavLink>
                   </Sidebar.Item>
@@ -205,12 +208,9 @@ const Nav = () => {
             <div className="relative">
               <label htmlFor="my-drawer-4" className="drawer-button ">
                 <img className="w-8 h-8" src="/cart.svg" alt="Cart Icon" />
-                <Badge
-                  className="bg-green-400 text-white absolute bottom-5 left-2 transform translate-x-1 -translate-y-1"
-                  color="success"
-                >
+                <p className="bg-green-400 text-white absolute bottom-6 left-4 p-1 text-xs rounded-lg transform translate-x-1 -translate-y-1">
                   +{userCartItems.length}
-                </Badge>
+                </p>
               </label>
             </div>
           </div>
@@ -237,15 +237,14 @@ const Nav = () => {
                 </span>
               </Dropdown.Header>
               <Dropdown.Item>
-              <NavLink to="/dashboard/user">Dashboard</NavLink>
-
+                <NavLink to="/dashboard/user">Dashboard</NavLink>
               </Dropdown.Item>
               <Dropdown.Item onClick={logOut}>Sign out</Dropdown.Item>
             </Dropdown>
           ) : (
             <button
               onClick={() => (window.location.href = "/login")}
-              className="btn bg-[#28A745] text-white hover:bg-green-700"
+              className="px-2 md:p-2 md:text-lg text-xs rounded-xl font-semibold bg-[#28A745] text-white hover:bg-green-700"
             >
               Login
             </button>
@@ -255,19 +254,34 @@ const Nav = () => {
         </div>
 
         <Navbar.Collapse className="items-center my-auto flex-wrap-nowrap whitespace-nowrap">
-          <Navbar.Link href="/" className="md:text-base text-[#28A745] uppercase">
+          <Navbar.Link
+            href="/"
+            className="md:text-base text-[#28A745] uppercase"
+          >
             Home
           </Navbar.Link>
-          <Navbar.Link className="md:text-base text-[#28A745] uppercase" href="/faqs">
+          <Navbar.Link
+            className="md:text-base text-[#28A745] uppercase"
+            href="/faqs"
+          >
             FAQs
           </Navbar.Link>
-          <Navbar.Link className="md:text-base text-[#28A745] uppercase" href="/services">
+          <Navbar.Link
+            className="md:text-base text-[#28A745] uppercase"
+            href="/services"
+          >
             Services
           </Navbar.Link>
-          <Navbar.Link className="md:text-base text-[#28A745] uppercase" href="/product">
+          <Navbar.Link
+            className="md:text-base text-[#28A745] uppercase"
+            href="/product"
+          >
             Products
           </Navbar.Link>
-          <Navbar.Link className="md:text-base text-[#28A745] uppercase" href="/contact">
+          <Navbar.Link
+            className="md:text-base text-[#28A745] uppercase"
+            href="/contact"
+          >
             Contact
           </Navbar.Link>
         </Navbar.Collapse>

@@ -88,9 +88,9 @@ const ProductDetails = () => {
   };
 
   return (
-    <div className="md:mx-20 md:my-10">
+    <div className="md:mx-20 my-5 md:my-10 mx-4">
       {product ? (
-        <div className="md:flex md:gap-10 justify-center">
+        <div className="md:flex gap-5 md:gap-10 justify-center">
           <div>
             <img
               className="w-auto mx-auto h-[50vh] shadow-2xl rounded-xl"
@@ -116,12 +116,12 @@ const ProductDetails = () => {
             <div>
               <button
                 onClick={toggleDropdown}
-                className="bg-white text-black rounded-md text-xs p-1 ms:p-2 hover:bg-gray-500 hover:text-white md:text-xl"
+                className="bg-white text-black rounded-md text-xs p-1 md:p-2 hover:bg-gray-500 hover:text-white md:text-xl"
               >
                 {selectedSize || "Select Size"}
               </button>
               {dropdownOpen && (
-                <div className="absolute mx-24 md:mx-16 md:ml-52 bg-white text-black rounded-md shadow-lg mt-1 md:text-xl text-xs">
+                <div className="absolute ml-16 mx-10 md:mx-16 md:ml-52 bg-white text-black rounded-md shadow-lg mt-1 md:text-xl text-xs">
                   {product.unit_prices && product.unit_prices.length > 0 ? (
                     product.unit_prices.map((unit) => (
                       <div
