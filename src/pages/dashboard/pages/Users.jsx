@@ -9,7 +9,7 @@ const Users = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allusers/")
+    fetch("https://mediore-medicine-server.vercel.app/allusers/")
       .then((res) => res.json())
       .then((data) => {
         // console.log("Fetched User Data: ", data);

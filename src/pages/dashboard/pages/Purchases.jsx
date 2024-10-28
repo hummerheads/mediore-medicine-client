@@ -8,7 +8,7 @@ const Purchases = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/order")
+    fetch("https://mediore-medicine-server.vercel.app/order")
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched Orders Data: ", data);
