@@ -9,10 +9,10 @@ const Users = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch("https://mediore-medicine-server-pw7e41obb.vercel.app/allusers/")
+    fetch("http://localhost:5000/allusers/")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Fetched User Data: ", data);
+        // console.log("Fetched User Data: ", data);
         setallUsers(data);
         setLoading(false);
       })
@@ -22,7 +22,7 @@ const Users = () => {
       });
   }, []);
 
-  const userInfo = allUsers.filter((item) => item.userEmail === user?.email);
+  const userInfo = allUsers.filter((item) => item.email === user?.email);
 
   const handleDeleteItem = (itemId) => {
     Swal.fire({
@@ -61,6 +61,9 @@ const Users = () => {
 
   return (
     <div>
+      <h1 className="uppercase md:my-10 md:text-3xl text-center font-bold md:mb-10 text-[#28A745]">
+        Dashboard | USERS
+      </h1>
       <div className="overflow-x-auto">
         <Table className="text-center">
           <Table.Head>
@@ -88,10 +91,7 @@ const Users = () => {
 
                   <Table.Cell>
                     <div className="flex gap-2">
-                      <button
-
-                        className="bg-blue-500 px-4 py-2 rounded-xl hover:bg-blue-700 text-white text-xs md:text-lg"
-                      >
+                      <button className="bg-blue-500 px-4 py-2 rounded-xl hover:bg-blue-700 text-white text-xs md:text-lg">
                         Edit
                       </button>
                       <button

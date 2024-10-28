@@ -12,7 +12,7 @@ const ProductDashboard = () => {
   const [unitCount, setUnitCount] = useState(1);
 
   useEffect(() => {
-    fetch("https://mediore-medicine-server.vercel.app/allmeds")
+    fetch("http://localhost:5000/allmeds")
       .then((res) => res.json())
       .then((data) => {
         setAllProducts(data);
@@ -44,7 +44,7 @@ const ProductDashboard = () => {
         });
       }
     });
-    fetch(`https://mediore-medicine-server.vercel.app/allMeds/${itemId}`, {
+    fetch(`http://localhost:5000/allMeds/${itemId}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -83,8 +83,8 @@ const ProductDashboard = () => {
 
   const handleSaveChanges = () => {
     const url = editingProduct
-      ? `https://mediore-medicine-server.vercel.app/allMeds/${editingProduct._id}`
-      : "https://mediore-medicine-server.vercel.app/allMeds";
+      ? `http://localhost:5000/allMeds/${editingProduct._id}`
+      : "http://localhost:5000/allMeds";
     const method = editingProduct ? "PUT" : "POST";
 
     fetch(url, {
@@ -137,7 +137,7 @@ const ProductDashboard = () => {
 
   return (
     <div>
-      <h1 className="text-md md:text-3xl text-center my-5 font-bold mb-10 text-[#28A745]">
+      <h1 className="uppercase md:my-10 md:text-3xl text-center font-bold md:mb-10 text-[#28A745]">
         Dashboard | ALL Products
       </h1>
       <div className="flex justify-end mb-4">

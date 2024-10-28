@@ -17,6 +17,9 @@ import Purchases from "../pages/dashboard/pages/Purchases"
 import Users from "../pages/dashboard/pages/Users";
 import ProductDashboard from "../pages/dashboard/pages/ProductDashboard";
 import Checkout from "../pages/dashboard/pages/Checkout";
+import Success from "../pages/success/Success";
+import Fail from "../pages/fail/Fail";
+
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "payment/success/:tran_Id",
+        element: <Success></Success>,
+      },
+      {
+        path: "fail",
+        element: <Fail></Fail>,
       },
       {
         path: "/faqs",

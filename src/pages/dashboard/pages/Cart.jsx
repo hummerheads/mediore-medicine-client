@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { Table } from "flowbite-react";
 import { NavLink } from "react-router-dom";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -33,7 +33,6 @@ const Cart = () => {
   console.log("userCartItems: ", userCartItems);
 
   const handleDeleteItem = (itemId) => {
-
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -41,13 +40,13 @@ const Cart = () => {
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!"
+      confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
           title: "Deleted!",
           text: "Your file has been deleted.",
-          icon: "success"
+          icon: "success",
         });
       }
     });
@@ -76,8 +75,8 @@ const Cart = () => {
   }
   return (
     <div>
-      <h1 className="md:text-3xl text-center font-bold md:mb-10 text-[#28A745]">
-        Dashboard | My Cart
+      <h1 className="uppercase md:my-10 md:text-3xl text-center font-bold md:mb-10 text-[#28A745]">
+        Dashboard | MY CART
       </h1>
       <div className="my-4 md:my-10 text-right">
         <NavLink
@@ -117,9 +116,7 @@ const Cart = () => {
                       <img className="w-10 md:w-20" src={`${item.img}`} />
                     </Table.Cell>
                     <Table.Cell>
-                      <h1 className=" md:text-md">
-                        {item.productName}
-                      </h1>
+                      <h1 className=" md:text-md">{item.productName}</h1>
                     </Table.Cell>
                     <Table.Cell className=" text-xs md:text-sm">
                       {item.selectedSize}
@@ -145,7 +142,7 @@ const Cart = () => {
                 ))
               ) : (
                 <Table.Row>
-                  <p>No items in the cart for this user.</p>
+                  <p>You did not added any medicines in your cart yet.</p>
                 </Table.Row>
               )}
             </Table.Body>

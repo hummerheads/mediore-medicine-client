@@ -6,14 +6,12 @@ const Checkout = () => {
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const { user } = useContext(AuthContext);
-  const [shippingInfo, setShippingInfo] = useState({
-    address: "",
-    contactNumber: "",
-  });
+
   const [paymentMethod, setPaymentMethod] = useState("");
+  const [currency, setCurrency] = useState("USD");
 
   useEffect(() => {
-    fetch("https://mediore-medicine-server.vercel.app/cart")
+    fetch("http://localhost:5000/cart")
       .then((res) => res.json())
       .then((data) => {
         setCartItems(data);
@@ -29,24 +27,53 @@ const Checkout = () => {
     (item) => item.userEmail === user?.email
   );
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setShippingInfo((prevInfo) => ({
-      ...prevInfo,
-      [name]: value,
-    }));
+  const handleCurrencyChange = (e) => {
+    setCurrency(e.target.value);
   };
 
   const handlePaymentMethodChange = (e) => {
     setPaymentMethod(e.target.value);
   };
 
+  const totalPrice = userCartItems.reduce(
+    (total, item) => total + item.selectedPrice,
+    0
+  );
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (paymentMethod === "stripe") {
       console.log("Redirecting to Stripe...");
     } else if (paymentMethod === "sslcommerz") {
       console.log("Redirecting to SSLCommerz...");
+
+      const name = e.target.name.value;
+      const email = e.target.email.value;
+      const address = e.target.address.value;
+      const contactNumber = e.target.contactNumber.value;
+      const comments = e.target.comments.value;
+      const currency = e.target.currency.value;
+
+      const orderInfo = {
+        name,
+        email,
+        address,
+        contactNumber,
+        comments,
+        currency,
+        totalPrice
+      };
+      console.log("Order Info:", orderInfo);
+      fetch("http://localhost:5000/checkout", {
+        method: "POST",
+        headers: {"content-type": "application/json"},
+        body: JSON.stringify(orderInfo),
+      })
+      .then(res => res.json())
+      .then(result => {
+        window.location.replace(result.url);
+        console.log("Order placed successfully:", result);
+      })
     }
   };
 
@@ -58,11 +85,7 @@ const Checkout = () => {
     );
   }
 
-  const totalPrice = userCartItems.reduce(
-    (total, item) => total + item.selectedPrice,
-    0
-  );
-  console.log(totalPrice);
+
 
   return (
     <div className="max-w-4xl mx-auto p-5 bg-white shadow-md rounded-lg">
@@ -93,8 +116,12 @@ const Checkout = () => {
                     className="w-16 h-auto"
                   />
                 </Table.Cell>
-                <Table.Cell className="font-bold">{item.selectedSize}</Table.Cell>
-                <Table.Cell className="font-bold">${item.selectedPrice}.00</Table.Cell>
+                <Table.Cell className="font-bold">
+                  {item.selectedSize}
+                </Table.Cell>
+                <Table.Cell className="font-bold">
+                  ${item.selectedPrice}.00
+                </Table.Cell>
               </Table.Row>
             ))
           ) : (
@@ -104,22 +131,47 @@ const Checkout = () => {
               </td>
             </tr>
           )}
-                  {userCartItems.length > 0 && (
+          {userCartItems.length > 0 && (
             <Table.Row className="mt-10">
               <Table.Cell colSpan="4" className="text-xl font-bold text-center">
                 Total Amount to be Paid:
               </Table.Cell>
-              <Table.Cell className="font-bold ">
-              ${totalPrice}.00
-              </Table.Cell>
+              <Table.Cell className="font-bold ">${totalPrice}.00</Table.Cell>
             </Table.Row>
-        )}
+          )}
         </Table.Body>
-
       </Table>
 
       <h2 className="text-2xl mt-10 mb-3">Shipping Information</h2>
       <form onSubmit={handleSubmit} className="mb-5">
+        <div className="mb-3">
+          <label className="block mb-1" htmlFor="name">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+            className="border rounded w-full p-2"
+          />
+        </div>
+
+        <div className="mb-3">
+          <label className="block mb-1" htmlFor="email">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required
+            className="border rounded w-full p-2"
+          />
+        </div>
+
         <div className="mb-3">
           <label className="block mb-1" htmlFor="address">
             Shipping Address
@@ -128,8 +180,7 @@ const Checkout = () => {
             type="text"
             id="address"
             name="address"
-            value={shippingInfo.address}
-            onChange={handleChange}
+            placeholder="Enter Your Shipping Address"
             required
             className="border rounded w-full p-2"
           />
@@ -143,11 +194,38 @@ const Checkout = () => {
             type="tel"
             id="contactNumber"
             name="contactNumber"
-            value={shippingInfo.contactNumber}
-            onChange={handleChange}
+            placeholder="Enter Your Contact Number  "
             required
             className="border rounded w-full p-2"
           />
+        </div>
+
+        <div className="mb-3">
+          <label className="block mb-1" htmlFor="comments">
+            Additional Comments
+          </label>
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Additional Comments (if you have any)"
+            className="border rounded w-full p-2"
+          />
+        </div>
+
+        <div className="mb-3">
+          <label className="block mb-1" htmlFor="currency">
+            Currency
+          </label>
+          <select
+            id="currency"
+            value={currency}
+            onChange={handleCurrencyChange}
+            className="border rounded w-full p-2"
+          >
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="BDT">BDT</option>
+          </select>
         </div>
 
         <h2 className="text-2xl mb-3">Payment Method</h2>
